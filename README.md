@@ -16,18 +16,34 @@ After mounting our drive we will locate the folder where our data is stored to u
 
 # Important imports
 import numpy as np
+
 import pandas as pd
+
 import matplotlib.pyplot as plt
+
 from matplotlib.image import imread
+
 import cv2
+
 import random
+
 from os import listdir
+
 from sklearn.preprocessing import  LabelBinarizer
+
 from keras.preprocessing import image
+
 from keras.preprocessing.image import img_to_array, array_to_img
+
 from keras.optimizers import Adam
+
 from PIL import Image
+
 from keras.models import Sequential
+
 from keras.layers.normalization import BatchNormalization
+
 from keras.layers import Conv2D, MaxPooling2D, Activation, Flatten, Dropout, Dense, LeakyReLU
+
 from sklearn.model_selection import train_test_split
+
