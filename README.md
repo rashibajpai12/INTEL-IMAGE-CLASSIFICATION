@@ -1,5 +1,4 @@
 # INTEL-IMAGE-CLASSIFICATION
-
 In this project, we will be working on Intel images i.e. images of buildings, forest, street, etc. We will built a convolutional neural network and train it on this images. This is a multi class classification problem and we will use Keras.
 
 # Load the Drive helper and mount
