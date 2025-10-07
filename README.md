@@ -45,22 +45,16 @@ plt.figure(figsize=(11,11))
 
 path = "/content/drive/My Drive/Intel_Image_Dataset/mountain"
 for i in range(1, 26):
+plt.subplot(5, 5, i)
+plt.tight_layout()
 
-    plt.subplot(5, 5, i)
-    
-    plt.tight_layout()
-
-    # Select a random image from the folder
-    
-    rand_img = imread(path + '/' + random.choice(sorted(listdir(path))))
-
-    plt.imshow(rand_img)
-    
-    plt.title('mountain')
-    
-    plt.xlabel(str(rand_img.shape[1]), fontsize=10)
-    
-    plt.ylabel(str(rand_img.shape[0]), fontsize=10)
+# Select a random image from the folder
+  
+rand_img = imread(path + '/' + random.choice(sorted(listdir(path))))
+plt.imshow(rand_img)
+plt.title('mountain')    
+plt.xlabel(str(rand_img.shape[1]), fontsize=10)    
+plt.ylabel(str(rand_img.shape[0]), fontsize=10)
 plt.show()
 
 # Let's visualize some of the mountain images that we will be working on. Also we will observe x and y dimensions of the image.
