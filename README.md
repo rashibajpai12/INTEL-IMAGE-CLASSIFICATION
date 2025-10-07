@@ -42,14 +42,12 @@ from os import listdir
 plt.figure(figsize=(11,11))
 
 # Correct path based on your Drive structure
-
 path = "/content/drive/My Drive/Intel_Image_Dataset/mountain"
 for i in range(1, 26):
 plt.subplot(5, 5, i)
 plt.tight_layout()
 
 # Select a random image from the folder
-  
 rand_img = imread(path + '/' + random.choice(sorted(listdir(path))))
 plt.imshow(rand_img)
 plt.title('mountain')    
@@ -60,11 +58,8 @@ plt.show()
 # Let's visualize some of the mountain images that we will be working on. Also we will observe x and y dimensions of the image.
 
 # Setting root directory path and creating empty list
-
 dir = "/content/drive/My Drive/Intel_Image_Dataset/mountain"
-
 root_dir = listdir(dir)
-
 image_list, label_list = [], []
 
 Setting the root directory for the dataset and storing all the folders name of the dataset. We will also create 2 empty list for image and lables.
