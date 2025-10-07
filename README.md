@@ -9,12 +9,15 @@ from google.colab import drive
 drive.mount('/content/drive')
 
 First we will mount our google drive on colab so that we can use the dataset directly from our drive. For this you first need to upload the data on your drive and then mount the drive on colab.
+
 # After executing the cell above, Drive files will be present in "/content/drive/My Drive".
+
 !ls "/content/drive/My Drive"
 
 After mounting our drive we will locate the folder where our data is stored to use it in our colab notebook. Here we will see all the folders I have in my drive and 'Intel Image Dataset' contains the images that we will work on.
 
 # Important imports
+
 import numpy as np
 
 import pandas as pd
@@ -80,7 +83,6 @@ for i in range(1, 26):
     plt.xlabel(str(rand_img.shape[1]), fontsize=10)
     
     plt.ylabel(str(rand_img.shape[0]), fontsize=10)
-
 plt.show()
 
 # Let's visualize some of the mountain images that we will be working on. Also we will observe x and y dimensions of the image.
